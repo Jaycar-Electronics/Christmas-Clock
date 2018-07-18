@@ -5,7 +5,7 @@ Christmas joy. It's a clock which displays the time and date, and also displays 
 Christmas. When the sound module is triggered, a voice (it might be Santa) announces the number of days and
 weeks until Christmas and then offers a Christmassy greeting. It's sure to keep everyone entertained. There is
 some soldering and careful assembly required to compete this project.
-![](../images/NPI00008aa.png)
+![](images/NPI00008aa.png)
 
 ## Bill of Materials
 | Qty | Code | Description |
@@ -60,39 +60,39 @@ Also some connections go directly between the modules:
 
 Here's a diagram of where various modules will mount
 
-![](../images/NPI00008a.png)
+![](images/NPI00008a.png)
 
 We'll start by mounting the potentiometer and capacitor onto the Datalogging Shield. Before cutting off the excess lead on the capacitor, bend and solder them over to join onto the two legs of the potentiometer as shown, then cut off.
 
-![](../images/NPI00008b.png)
+![](images/NPI00008b.png)
 
 The Amplifier Module is next. Because it has a different pin spacing, start by breaking 2 lots of 2 pins and a single pin from the HM3212, and place them in the Uno board in the sockets for D8/D9, D12 and AREF/SDA (SDA may not be marked). This will be our jig for soldering the headers onto the board, and will ensure that the module will fit.
 
-![](../images/NPI00008c.png)
+![](images/NPI00008c.png)
 
-![](../images/NPI00008d.png)
+![](images/NPI00008d.png)
 
 Now we can lift the entire assembly out and mount in the Datalogging Shield as shown below, and solder the
 header pins in place. Make sure the Amplifier Module is facing as shown- it definitely won't work if it is turned around.
 
-![](../images/NPI00008e.png)
+![](images/NPI00008e.png)
 
 then mount and solder the sound module system
 
-![](../images/NPI00008f.png)
+![](images/NPI00008f.png)
 
 ### Display Module
 For the Display Module, break off a group of ten pins from the HM3212 Header Strip, and solder vertically to pins 1-10 on the back of the Display Module. Then run a wire from GND (pin 1) to PSB (pin 15) and BLK (pin 20) on the back of the Display Module, and another wire from VCC (pin 2) to BLA (pin 19). We've used different colours to help distinguish the wires, but that is not critical to operation of the Clock.
 
-![](../images/NPI00008g.png)
+![](images/NPI00008g.png)
 
 Then mount and solder onto the datalogging shield as shown:
 
-![](../images/NPI00008h.png)
+![](images/NPI00008h.png)
 
 The final constructions step is to turn the assembled shield over, and make all the wiring connections.
 
-![](../images/NPI00008i.png)
+![](images/NPI00008i.png)
 
 ## Programming
 Download the source code and extract into a new folder, open the .ino file in the Arduino IDE and press upload.
