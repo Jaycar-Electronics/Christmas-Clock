@@ -45,9 +45,8 @@ Also some connections go directly between the modules:
 
 
 ## Downloads
-* [Source code](../downloads/Christmas_Countdown_Clock.zip)
-* [Christmas Sounds](../downloads/Christmas_Sounds.zip)
-* [RTC setting](../downloads/XC4536_Setting.zip)
+* [Christmas Sounds](Christmas_Sounds.zip)
+* [RTC setting](XC4536_Setting.zip)
 
 ## Software Libraries
 |Library | Author
