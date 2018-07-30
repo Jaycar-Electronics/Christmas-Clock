@@ -1,5 +1,7 @@
 Christmas Countdown Clock
+
 _Project 00008_
+
 This project probably has the most parts of any of the ones we have done, but is sure to help spread some
 Christmas joy. It's a clock which displays the time and date, and also displays the number of days until
 Christmas. When the sound module is triggered, a voice (it might be Santa) announces the number of days and
@@ -25,15 +27,19 @@ some soldering and careful assembly required to compete this project.
 
 ## Connection Table
 
-|UNO/Shield| LCD | Amplifier | sound module | potentiometer|
-|---|--- |--- |--- |
+Here's a diagram of where various modules will mount
+
+![](images/NPI00008a.png)
+
+|UNO/Shield | LCD | Amplifier | sound module | potentiometer|
+|---|--- |--- |--- | --- | 
 | GND | LCD pin 1 | GND | G | pin closest to sound module |
 |5V | LCD pin 2 (VCC) | 5V | + | |
-|D9 ||||pin not connected to cap|
-|D5 | LCD 4 (RS) | |||
-|D6 | LCD 5 (R/W) ||||
-|D7| LCD 6 (E) ||||
-|A3 | ||D0| |
+|D9 | | | |pin not connected to cap|
+|D5 | LCD 4 (RS) | | | |
+|D6 | LCD 5 (R/W) | | | |
+|D7| LCD 6 (E) | | | |
+|A3 | | |D0| |
 
 Also some connections go directly between the modules:
 
@@ -57,9 +63,6 @@ Also some connections go directly between the modules:
 
 ## Assembly
 
-Here's a diagram of where various modules will mount
-
-![](images/NPI00008a.png)
 
 We'll start by mounting the potentiometer and capacitor onto the Datalogging Shield. Before cutting off the excess lead on the capacitor, bend and solder them over to join onto the two legs of the potentiometer as shown, then cut off.
 
