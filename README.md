@@ -7,6 +7,7 @@ Christmas joy. It's a clock which displays the time and date, and also displays 
 Christmas. When the sound module is triggered, a voice (it might be Santa) announces the number of days and
 weeks until Christmas and then offers a Christmassy greeting. It's sure to keep everyone entertained. There is
 some soldering and careful assembly required to compete this project.
+
 ![](images/NPI00008aa.png)
 
 ## Bill of Materials
