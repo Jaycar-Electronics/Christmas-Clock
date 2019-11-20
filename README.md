@@ -1,4 +1,4 @@
-Christmas Countdown Clock
+# Christmas Countdown Clock
 
 _Project 00008_
 
@@ -11,20 +11,21 @@ some soldering and careful assembly required to compete this project.
 ![](images/NPI00008aa.png)
 
 ## Bill of Materials
-| Qty | Code | Description |
-| --- | --- | ---|
-|1 | [XC4410](http://jaycar.com.au/p/XC4410) | UNO board
-|1 | [XC4536](http://jaycar.com.au/p/XC4536) | Datalogging shield
-|1 | [XC4617](http://jaycar.com.au/p/XC4617) | Dot Matrix LCD display
-|1 | [XC4438](http://jaycar.com.au/p/XC4438) | Sound sensor
-|1 | [XC4448](http://jaycar.com.au/p/XC4448) | Amplifier
-|1 | [RP7504](http://jaycar.com.au/p/RP7504) | 1k potentiometer
-|1 | [RM7125](http://jaycar.com.au/p/RM7125) | 100nF polyester cap
-|1 | [HM3212](http://jaycar.com.au/p/HM3212) | 40way header strip
-|1 | [AS3004](http://jaycar.com.au/p/AS3004) | Miniture speaker
-|1 | [XC4998](http://jaycar.com.au/p/XC4998) | 2GB SD card
 
-* You'll also need about a metre of insulated wire - if you don't have any spare, our [XC3010](http://jaycar.com.au/p/XC3010) will work.
+| Qty | Code                                    | Description            |
+| --- | --------------------------------------- | ---------------------- |
+| 1   | [XC4410](http://jaycar.com.au/p/XC4410) | UNO board              |
+| 1   | [XC4536](http://jaycar.com.au/p/XC4536) | Data Logging shield    |
+| 1   | [XC4617](http://jaycar.com.au/p/XC4617) | Dot Matrix LCD display |
+| 1   | [XC4438](http://jaycar.com.au/p/XC4438) | Sound sensor           |
+| 1   | [XC4448](http://jaycar.com.au/p/XC4448) | Amplifier              |
+| 1   | [RP7504](http://jaycar.com.au/p/RP7504) | 1k potentiometer       |
+| 1   | [RM7125](http://jaycar.com.au/p/RM7125) | 100nF polyester cap    |
+| 1   | [HM3212](http://jaycar.com.au/p/HM3212) | 40way header strip     |
+| 1   | [AS3004](http://jaycar.com.au/p/AS3004) | Miniture speaker       |
+| 1   | [XC4998](http://jaycar.com.au/p/XC4998) | 2GB SD card            |
+
+- {WH3032}
 
 ## Connection Table
 
@@ -32,38 +33,37 @@ Here's a diagram of where various modules will mount
 
 ![](images/NPI00008a.png)
 
-|UNO/Shield | LCD | Amplifier | sound module | potentiometer|
-|---|--- |--- |--- | --- | 
-| GND | LCD pin 1 | GND | G | pin closest to sound module |
-|5V | LCD pin 2 (VCC) | 5V | + | |
-|D9 | | | |pin not connected to cap|
-|D5 | LCD 4 (RS) | | | |
-|D6 | LCD 5 (R/W) | | | |
-|D7| LCD 6 (E) | | | |
-|A3 | | |D0| |
+| UNO/Shield | LCD             | Amplifier | sound module | potentiometer               |
+| ---------- | --------------- | --------- | ------------ | --------------------------- |
+| GND        | LCD pin 1       | GND       | G            | pin closest to sound module |
+| 5V         | LCD pin 2 (VCC) | 5V        | +            |                             |
+| D9         |                 |           |              | pin not connected to cap    |
+| D5         | LCD 4 (RS)      |           |              |                             |
+| D6         | LCD 5 (R/W)     |           |              |                             |
+| D7         | LCD 6 (E)       |           |              |                             |
+| A3         |                 |           | D0           |                             |
 
 Also some connections go directly between the modules:
 
-| From | To |
-| ---|--- |
-| potentiometer (middle)| Amplifier (RIN)
-| R+ | AS3004 speaker
-| R- | AS3004 speaker
-
+| From                   | To              |
+| ---------------------- | --------------- |
+| potentiometer (middle) | Amplifier (RIN) |
+| R+                     | AS3004 speaker  |
+| R-                     | AS3004 speaker  |
 
 ## Downloads
-* [Christmas Sounds](Christmas_Sounds.zip)
-* [RTC setting](XC4536_Setting.zip)
+
+- [Christmas Sounds](Christmas_Sounds.zip)
+- [RTC setting](XC4536_Setting.zip)
 
 ## Software Libraries
-|Library | Author
-| --- |--- |
-|TMRpcm | TMRh20 |
-|RTCLib | Adafruit |
 
+| Library | Author   |
+| ------- | -------- |
+| TMRpcm  | TMRh20   |
+| RTCLib  | Adafruit |
 
 ## Assembly
-
 
 We'll start by mounting the potentiometer and capacitor onto the Datalogging Shield. Before cutting off the excess lead on the capacitor, bend and solder them over to join onto the two legs of the potentiometer as shown, then cut off.
 
@@ -85,6 +85,7 @@ then mount and solder the sound module system
 ![](images/NPI00008f.png)
 
 ### Display Module
+
 For the Display Module, break off a group of ten pins from the HM3212 Header Strip, and solder vertically to pins 1-10 on the back of the Display Module. Then run a wire from GND (pin 1) to PSB (pin 15) and BLK (pin 20) on the back of the Display Module, and another wire from VCC (pin 2) to BLA (pin 19). We've used different colours to help distinguish the wires, but that is not critical to operation of the Clock.
 
 ![](images/NPI00008g.png)
@@ -98,6 +99,7 @@ The final constructions step is to turn the assembled shield over, and make all 
 ![](images/NPI00008i.png)
 
 ## Programming
+
 Download the source code and extract into a new folder, open the .ino file in the Arduino IDE and press upload.
 
 when you first use the sketch, you'll notice that the time/date might be wrong. use the RTC setting in the downloads section to correct the time, and then try the source code again.
@@ -107,8 +109,6 @@ There will be two adjustments to make- the first is the sensitivity of the Sound
 If the sound doesn't trigger when L2 flashes on, the Sound Module may not be wired correctly.
 The second adjustment is for the volume- we use the potentiometer for this. Give the microphone on the Sound Module a tap, and turn the potentiometer shaft clockwise to increase the volume. If the volume is too high, the sound may distort and damage the speaker- it should not need to be turned more than about 30 degrees to be audible. You may need to keep triggering the sound to keep adjusting the volume. When the Clock is speaking, it should read out the number of days and weeks until Christmas, and then give a random greeting. If the sound is heavily distorted or there is a high pitched background noise, there may be a wiring problem with the potentiometer, capacitor or amplifier module.
 
-
 ## Use
-
 
 ## Future Improvements
