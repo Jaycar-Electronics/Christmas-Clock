@@ -1,7 +1,5 @@
 # Christmas Countdown Clock
 
-_Project 00008_
-
 This project probably has the most parts of any of the ones we have done, but is sure to help spread some
 Christmas joy. It's a clock which displays the time and date, and also displays the number of days until
 Christmas. When the sound module is triggered, a voice (it might be Santa) announces the number of days and
@@ -9,6 +7,20 @@ weeks until Christmas and then offers a Christmassy greeting. It's sure to keep 
 some soldering and careful assembly required to compete this project.
 
 ![](images/NPI00008aa.png)
+
+## Table of contents
+
+- [Christmas Countdown Clock](#Christmas-Countdown-Clock)
+  - [Table of contents](#Table-of-contents)
+  - [Bill of Materials](#Bill-of-Materials)
+  - [Connection Table](#Connection-Table)
+  - [Downloads](#Downloads)
+  - [Software Libraries](#Software-Libraries)
+  - [Assembly](#Assembly)
+    - [Display Module](#Display-Module)
+  - [Programming](#Programming)
+  - [Use](#Use)
+  - [Future Improvements](#Future-Improvements)
 
 ## Bill of Materials
 
@@ -22,10 +34,10 @@ some soldering and careful assembly required to compete this project.
 | 1   | [RP7504](http://jaycar.com.au/p/RP7504) | 1k potentiometer       |
 | 1   | [RM7125](http://jaycar.com.au/p/RM7125) | 100nF polyester cap    |
 | 1   | [HM3212](http://jaycar.com.au/p/HM3212) | 40way header strip     |
-| 1   | [AS3004](http://jaycar.com.au/p/AS3004) | Miniture speaker       |
+| 1   | [AS3004](http://jaycar.com.au/p/AS3004) | Miniature speaker      |
 | 1   | [XC4998](http://jaycar.com.au/p/XC4998) | 2GB SD card            |
 
-- {WH3032}
+- [WH3032](https://jaycar.com.au/p/WH3032)
 
 ## Connection Table
 
